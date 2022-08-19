@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="header">Splitter</h1>
+    <div class="container">
+      <div class="calculator">
+        <label for="bill">Bill</label><br />
+        <input type="number" id="bill" name="bill" />
+        <div class="button-container">
+          <p>Select Tip %</p>
+          <button class="five" data-set="0.05">5%</button>
+          <button class="ten" data-set="0.1">10%</button>
+          <button class="fiftheen" data-set="0.15">15%</button>
+          <button class="twenty-five" data-set="0.25">25%</button>
+          <button class="fifty" data-set="0.5">50%</button>
+          <button class="custom">Custom</button>
+        </div>
+        <label for="people">Number of people</label><br />
+        <input type="number" id="people" name="people" />
+      </div>
+      <div class="result">
+        <div class="flexbox">
+          <p>
+            Tip Amount <br />
+            / person
+          </p>
+          <div class="tip-amount"></div>
+        </div>
+        <div class="flexbox">
+          <p>
+            Total <br />
+            / person
+          </p>
+          <div class="total-amount"></div>
+        </div>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
